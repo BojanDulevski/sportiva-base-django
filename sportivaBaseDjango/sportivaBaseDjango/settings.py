@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-0@wep*02ho()qzb&opaj1&muq(reo0^+vcb5*u-wrkxhu*%992
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['sportiva-base-django.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
