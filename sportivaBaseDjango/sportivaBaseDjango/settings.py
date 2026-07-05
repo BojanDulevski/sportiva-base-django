@@ -31,7 +31,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-
     'rest_framework.authtoken',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -39,10 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'DjangoSportivaBase',
+    'sportivaBaseDjango.DjangoSportivaBase',   
+    'sportivaBaseDjango.activities',           
     'rest_framework',
     'corsheaders',
-
 ]
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
@@ -68,7 +67,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 CORS_ALLOW_ALL_ORIGINS = True
-ROOT_URLCONF = 'sportivaBaseDjango.urls'
+ROOT_URLCONF = 'sportivaBaseDjango.sportivaBaseDjango.urls'
 
 TEMPLATES = [
     {
@@ -85,7 +84,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'sportivaBaseDjango.wsgi.application'
+WSGI_APPLICATION = 'sportivaBaseDjango.sportivaBaseDjango.wsgi.application'
 
 DATA_UPLOAD_MAX_NUMBER_FIELDS = 10240
 
