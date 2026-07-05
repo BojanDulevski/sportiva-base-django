@@ -1,11 +1,11 @@
 from django.contrib import admin
-from django.urls import path, include # Додај include
+from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('DjangoSportivaBase.urls')), # Го поврзуваме со апликацијата
+    path('api/', include('sportivaBaseDjango.DjangoSportivaBase.urls')),
 ]
 
 if settings.DEBUG:
